@@ -1,6 +1,8 @@
+import './main.scss';
+
 import { createApp } from 'vue';
 
-import App from './attr.vue';
+import App from './App.vue';
 
 const app = createApp(App);
 

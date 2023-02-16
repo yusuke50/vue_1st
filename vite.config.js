@@ -22,6 +22,7 @@ export default defineConfig({
       },
       output: {
         entryFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]',
       },
     },
   },

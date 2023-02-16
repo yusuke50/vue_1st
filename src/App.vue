@@ -74,8 +74,15 @@ export default {
 <template>
   <h1 :id="h1T">{{ msg.split('').reverse().join('') }}</h1>
   <h1 id="h1T">{{ msg.split('').reverse().join('') }}</h1>
-  <button type="button" @click="addCount($event)" data-vno="1" ref="clickBtn">
-    test alert
+  <button
+    type="button"
+    @click="addCount($event)"
+    class="btn"
+    data-vno="1"
+    ref="clickBtn"
+  >
+    <span class="dot-class">O</span>
+    <span>test alert</span>
   </button>
   <input type="text" @change="iptChange1" />
   <p class="binding1">{{ binding1 }}</p>
@@ -124,21 +131,3 @@ export default {
     A link with e.preventDefault()
   </a>
 </template>
-
-<style>
-#ABC {
-  color: red;
-}
-
-#h1T {
-  color: wheat;
-}
-
-.mt-3 {
-  margin-top: 1.5rem;
-}
-
-.done {
-  text-decoration: line-through;
-}
-</style>
